@@ -1,0 +1,121 @@
+/* FUENTES ------------------------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* -------------------------------------------------------------------------------------------- */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    overflow-y: scroll;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+/* MAIN --------------------------------------------------------------------------------------- */
+
+    /* NAVBAR ---------------------------- */
+.my-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.my-search:focus {
+    width: 250px;
+    transition: .6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -ms-transition: .6s ease;
+    -o-transition: .6s ease;
+}
+
+.home-icon {
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+
+    /* ----------------------------------- */
+
+.title-pages{
+    font-family: 'Pacifico', cursive;
+}
+
+.main{
+    flex: 1;
+}
+
+.img-card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    /* FLECHA PARA SUBIR CON SCROLL JS */
+.container-up {
+    right: 30px;
+    bottom: 110px;
+}
+
+.btn-up {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 1.5rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+}
+
+.show{
+    opacity: 1;
+}
+    /* -------------------------------- */
+
+
+/* FOOTER -------------------------------------------------------------------------------------- */
+.footer{
+    height: 100px;
+}
+
+.icon-social {
+    /* para que te conserve la transicion al quitar el boton hay que ponerla en la etiqueta sin ningun efecto */
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.twi:hover, .fac:hover {
+    transform: scale(1.5);
+    color: #3466d2;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.ins:hover {
+    transform: scale(1.5);
+    color: #ce4a32;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
